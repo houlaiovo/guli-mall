@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>guli-common</module>
         <module>guli-coupon</module>
         <module>guli-member</module>
         <module>guli-order</module>
@@ -18,4 +19,39 @@
         <module>renren-fast</module>
         <module>renren-generator</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.guli.mall</groupId>
+                <artifactId>guli-common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.guli.mall</groupId>
+                <artifactId>guli-coupon</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.guli.mall</groupId>
+                <artifactId>guli-member</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.guli.mall</groupId>
+                <artifactId>guli-order</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.guli.mall</groupId>
+                <artifactId>guli-product</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.guli.mall</groupId>
+                <artifactId>guli-ware</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

@@ -3,13 +3,15 @@ server:
 
 # mysql
 spring:
+  main:
+    allow-circular-references: true
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     #MySQL配置
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/renren_fast?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
-    username: renren
-    password: 123456
+    url: jdbc:mysql://localhost:3306/gulimall-pms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
     #oracle配置
     #    driverClassName: oracle.jdbc.OracleDriver
     #    url: jdbc:oracle:thin:@47.100.206.162:1521:xe
@@ -31,8 +33,9 @@ spring:
   jackson:
     time-zone: GMT+8
     date-format: yyyy-MM-dd HH:mm:ss
-  resources:
-    static-locations: classpath:/static/,classpath:/views/
+  web:
+    resources:
+      static-locations: classpath:/static/,classpath:/views/
 
 #mongodb:
 #  host: localhost
@@ -56,4 +59,9 @@ pagehelper:
 #指定数据库，可选值有【mysql、oracle、sqlserver、postgresql、mongodb】
 renren:
   database: mysql
+
+
+
+
+
 
