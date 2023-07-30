@@ -25,6 +25,11 @@ public class CouponController {
     @Autowired
     private CouponService couponService;
 
+    @RequestMapping("/member")
+    public R memberCoupon(){
+        return R.ok().put("coupon_count", 1);
+    }
+
     /**
      * 列表
      */
