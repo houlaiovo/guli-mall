@@ -8,7 +8,6 @@ import com.guli.mall.member.feign.CouponService;
 import com.guli.mall.member.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
@@ -24,7 +23,7 @@ import java.util.Map;
  * @date 2023-07-30 11:33:50
  */
 @RestController
-@RefreshScope
+//@RefreshScope
 @RequestMapping("member/member")
 public class MemberController {
     @Autowired
